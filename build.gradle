@@ -1,0 +1,17 @@
+group 'tylerbenson'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.60'
+    compile group: 'com.drewnoakes', name: 'metadata-extractor', version: '2.9.1'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
